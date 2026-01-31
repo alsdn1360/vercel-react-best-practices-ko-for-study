@@ -1,6 +1,6 @@
 ## About This Repository
 
-이 레포지토리는 AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습을 목적으로 [react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)의 rules를 한국어로 번역했습니다.
+AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습을 목적으로 [react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)의 rules를 Gemini를 이용해서 번역한 레포지토리입니다.
 
 ## Rule File Structure
 
@@ -30,7 +30,7 @@ Brief explanation of the rule and why it matters.
 ## Impact Levels
 
 ### `CRITICAL`
-  - [`bundle-barrel-imports.md`](rules/bundle-barrel-imports.md) (Avoid Barrel File Imports)
+  - [`bundle-barrel-imports.ko.md`](rules/bundle-barrel-imports.ko.md) (Barrel File Import 피하기)
   - [`server-auth-actions.md`](rules/server-auth-actions.md) (Authenticate Server Actions Like API Routes)
   - [`bundle-dynamic-imports.md`](rules/bundle-dynamic-imports.md) (Dynamic Imports for Heavy Components)
   - [`async-parallel.md`](rules/async-parallel.md) (Promise.all() for Independent Operations)
