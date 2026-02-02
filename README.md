@@ -2,41 +2,16 @@
 
 AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습을 목적으로 [react-best-practices](https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices)의 rules를 Gemini를 이용해서 번역한 레포지토리입니다.
 
-## Rule File Structure
-
-각 rules는 다음 구조를 따릅니다:
-
-```markdown
----
-title: Rule Title Here
-impact: MEDIUM
-impactDescription: Optional description
-tags: tag1, tag2, tag3
----
-
-## Rule Title Here
-
-Brief explanation of the rule and why it matters.
-
-**Incorrect (description of what's wrong):**
-
-// Bad code example
-
-**Correct (description of what's right):**
-
-// Good code example
-```
-
 ## Impact Levels
 
 ### `CRITICAL`
   - [`bundle-barrel-imports.ko.md`](rules/bundle-barrel-imports.ko.md) (Barrel File Import 피하기)
-  - [`server-auth-actions.md`](rules/server-auth-actions.md) (Authenticate Server Actions Like API Routes)
-  - [`bundle-dynamic-imports.md`](rules/bundle-dynamic-imports.md) (Dynamic Imports for Heavy Components)
-  - [`async-parallel.md`](rules/async-parallel.md) (Promise.all() for Independent Operations)
-  - [`server-parallel-fetching.md`](rules/server-parallel-fetching.md) (Parallel Data Fetching with Component Composition)
-  - [`async-dependencies.md`](rules/async-dependencies.md) (Dependency-Based Parallelization)
-  - [`async-api-routes.md`](rules/async-api-routes.md) (Prevent Waterfall Chains in API Routes)
+  - [`server-auth-actions.ko.md`](rules/server-auth-actions.ko.md) (API Routes처럼 Server Actions 인증하기)
+  - [`bundle-dynamic-imports.ko.md`](rules/bundle-dynamic-imports.ko.md) (Heavy Components를 위한 Dynamic Imports)
+  - [`async-parallel.ko.md`](rules/async-parallel.ko.md) (독립적인 작업을 위한 Promise.all())
+  - [`server-parallel-fetching.ko.md`](rules/server-parallel-fetching.ko.md) (Component Composition을 활용한 Parallel Data Fetching)
+  - [`async-dependencies.ko.md`](rules/async-dependencies.ko.md) (Dependency-Based Parallelization)
+  - [`async-api-routes.ko.md`](rules/async-api-routes.ko.md) (API Routes의 Waterfall Chains 방지)
 ### `HIGH`
   - [`server-cache-lru.md`](rules/server-cache-lru.md) (Cross-Request LRU Caching)
   - [`rendering-content-visibility.md`](rules/rendering-content-visibility.md) (CSS content-visibility for Long Lists)
