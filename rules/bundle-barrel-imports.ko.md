@@ -22,7 +22,6 @@ import { Check, X, Menu } from 'lucide-react'
 
 import { Button, TextField } from '@mui/material'
 // 2,225개의 module을 로드하며, dev 환경에서 약 4.2s 추가 소요
-
 ```
 
 **Correct (필요한 것만 import함):**
@@ -36,7 +35,6 @@ import Menu from 'lucide-react/dist/esm/icons/menu'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 // 사용하는 것만 로드
-
 ```
 
 **Alternative (Next.js 13.5+):**
@@ -52,7 +50,6 @@ module.exports = {
 // 그러면 편의성 좋은 barrel import를 유지할 수 있습니다:
 import { Check, X, Menu } from 'lucide-react'
 // Build 시점에 자동으로 direct import로 변환됨
-
 ```
 
 Direct import는 15-70% 더 빠른 dev boot, 28% 더 빠른 build, 40% 더 빠른 cold start, 그리고 현저히 빠른 HMR을 제공합니다.

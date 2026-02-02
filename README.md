@@ -12,17 +12,20 @@ AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습�
   - [`server-parallel-fetching.ko.md`](rules/server-parallel-fetching.ko.md) (Component Composition을 활용한 Parallel Data Fetching)
   - [`async-dependencies.ko.md`](rules/async-dependencies.ko.md) (Dependency-Based Parallelization)
   - [`async-api-routes.ko.md`](rules/async-api-routes.ko.md) (API Routes의 Waterfall Chains 방지)
+
 ### `HIGH`
-  - [`server-cache-lru.md`](rules/server-cache-lru.md) (Cross-Request LRU Caching)
-  - [`rendering-content-visibility.md`](rules/rendering-content-visibility.md) (CSS content-visibility for Long Lists)
-  - [`server-serialization.md`](rules/server-serialization.md) (Minimize Serialization at RSC Boundaries)
-  - [`async-defer-await.md`](rules/async-defer-await.md) (Defer Await Until Needed)
-  - [`async-suspense-boundaries.md`](rules/async-suspense-boundaries.md) (Strategic Suspense Boundaries)
-  - [`bundle-conditional.md`](rules/bundle-conditional.md) (Conditional Module Loading)
+  - [`server-cache-lru.ko.md`](rules/server-cache-lru.ko.md) (Cross-Request LRU Caching)
+  - [`rendering-content-visibility.ko.md`](rules/rendering-content-visibility.ko.md) (긴 리스트를 위한 CSS content-visibility)
+  - [`server-serialization.ko.md`](rules/server-serialization.ko.md) (RSC Boundaries에서의 Serialization 최소화)
+  - [`async-defer-await.ko.md`](rules/async-defer-await.ko.md) (필요한 시점까지 Await 지연시키기)
+  - [`async-suspense-boundaries.ko.md`](rules/async-suspense-boundaries.ko.md) (전략적 Suspense Boundaries)
+  - [`bundle-conditional.ko.md`](rules/bundle-conditional.ko.md) (조건부 Module Loading)
+
 ### `MEDIUM-HIGH`
   - [`js-length-check-first.md`](rules/js-length-check-first.md) (Early Length Check for Array Comparisons)
   - [`js-tosorted-immutable.md`](rules/js-tosorted-immutable.md) (Use toSorted() Instead of sort() for Immutability)
   - [`client-swr-dedup.md`](rules/client-swr-dedup.md) (Use SWR for Automatic Deduplication)
+
 ### `MEDIUM`
   - [`bundle-preload.md`](rules/bundle-preload.md) (Preload Based on User Intent)
   - [`rerender-memo-with-default-value.md`](rules/rerender-memo-with-default-value.md) (Extract Default Non-primitive Parameter Value from Memoized Component to Constant)
@@ -44,6 +47,7 @@ AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습�
   - [`js-batch-dom-css.md`](rules/js-batch-dom-css.md) (Avoid Layout Thrashing)
   - [`js-cache-function-results.md`](rules/js-cache-function-results.md) (Cache Repeated Function Calls)
   - [`client-localstorage-schema.md`](rules/client-localstorage-schema.md) (Version and Minimize localStorage Data)
+
 ### `LOW-MEDIUM`
   - [`js-cache-storage.md`](rules/js-cache-storage.md) (Cache Storage API Calls)
   - [`js-combine-iterations.md`](rules/js-combine-iterations.md) (Combine Multiple Array Iterations)
@@ -55,6 +59,7 @@ AI가 작성해주는 코드를 조금이라도 더 이해하기 위한 학습�
   - [`advanced-init-once.md`](rules/advanced-init-once.md) (Initialize App Once, Not Per Mount)
   - [`js-hoist-regexp.md`](rules/js-hoist-regexp.md) (Hoist RegExp Creation)
   - [`rerender-simple-expression-in-memo.md`](rules/rerender-simple-expression-in-memo.md) (Do not wrap a simple expression with a primitive result type in useMemo)
+
 ### `LOW`
   - [`advanced-use-latest.md`](rules/advanced-use-latest.md) (useEffectEvent for Stable Callback Refs)
   - [`server-dedup-props.md`](rules/server-dedup-props.md) (Avoid Duplicate Serialization in RSC Props)

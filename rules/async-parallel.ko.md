@@ -15,7 +15,6 @@ tags: async, parallelization, promises, waterfalls
 const user = await fetchUser()
 const posts = await fetchPosts()
 const comments = await fetchComments()
-
 ```
 
 **Correct (병렬 실행, 1번의 round trip 발생):**
@@ -26,5 +25,4 @@ const [user, posts, comments] = await Promise.all([
   fetchPosts(),
   fetchComments()
 ])
-
 ```

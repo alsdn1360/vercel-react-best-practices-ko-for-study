@@ -26,7 +26,6 @@ async function Sidebar() {
   const items = await fetchSidebarItems()
   return <nav>{items.map(renderItem)}</nav>
 }
-
 ```
 
 **Correct (둘 다 동시에 fetch 수행):**
@@ -50,7 +49,6 @@ export default function Page() {
     </div>
   )
 }
-
 ```
 
 **children prop을 사용한 대안:**
@@ -82,5 +80,4 @@ export default function Page() {
     </Layout>
   )
 }
-
 ```

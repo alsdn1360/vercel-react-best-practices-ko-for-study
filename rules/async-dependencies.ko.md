@@ -17,7 +17,6 @@ const [user, config] = await Promise.all([
   fetchConfig()
 ])
 const profile = await fetchProfile(user.id)
-
 ```
 
 **Correct (config와 profile이 병렬로 실행됨):**
@@ -32,7 +31,6 @@ const { user, config, profile } = await all({
     return fetchProfile((await this.$.user).id)
   }
 })
-
 ```
 
 **추가 dependency가 없는 대안:**
@@ -48,7 +46,6 @@ const [user, config, profile] = await Promise.all([
   fetchConfig(),
   profilePromise
 ])
-
 ```
 
 Reference: [https://github.com/shuding/better-all](https://github.com/shuding/better-all)

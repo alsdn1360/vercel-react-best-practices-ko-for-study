@@ -17,7 +17,6 @@ import { MonacoEditor } from './monaco-editor'
 function CodePanel({ code }: { code: string }) {
   return <MonacoEditor value={code} />
 }
-
 ```
 
 **Correct (Monaco를 필요할 때 load):**
@@ -33,5 +32,4 @@ const MonacoEditor = dynamic(
 function CodePanel({ code }: { code: string }) {
   return <MonacoEditor value={code} />
 }
-
 ```

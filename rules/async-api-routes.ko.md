@@ -18,7 +18,6 @@ export async function GET(request: Request) {
   const data = await fetchData(session.user.id)
   return Response.json({ data, config })
 }
-
 ```
 
 **Correct (auth와 config가 즉시 시작됨):**
@@ -37,7 +36,6 @@ export async function GET(request: Request) {
 
   return Response.json({ data, config })
 }
-
 ```
 
 더 복잡한 의존성 체인(dependency chains)이 있는 작업의 경우, `better-all`을 사용하여 parallelism을 자동으로 극대화하세요 (Dependency-Based Parallelization 참고).

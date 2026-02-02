@@ -23,7 +23,6 @@ export async function deleteUser(userId: string) {
   await db.user.delete({ where: { id: userId } })
   return { success: true }
 }
-
 ```
 
 **Correct (Action 내부에서 인증 수행):**
@@ -50,7 +49,6 @@ export async function deleteUser(userId: string) {
   await db.user.delete({ where: { id: userId } })
   return { success: true }
 }
-
 ```
 
 **Input validation 포함:**
@@ -93,7 +91,6 @@ export async function updateProfile(data: unknown) {
   
   return { success: true }
 }
-
 ```
 
 Reference: [https://nextjs.org/docs/app/guides/authentication](https://nextjs.org/docs/app/guides/authentication)
